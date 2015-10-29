@@ -35,7 +35,7 @@
             </div>
         </div>
         <footer class="row">
-            <p> This is footer</p>
+            <p> This is footer for more information</p>
         </footer>
     </div>
 </body>
