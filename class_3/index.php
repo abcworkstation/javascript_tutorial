@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Javascript Basic </title>
+    <title> Javascript Basic : click </title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,24 +20,10 @@
                 <a class="testing" data-bg="red" data-height="255" data-width="200" href="box"> draw box </a>
             </div>
             <div class="col-md-9 content">
-                <p class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aperiam consectetur enim natus, quae sapiente. Animi aut, dolorum et fugit mollitia nam, officia porro quo ratione sapiente velit vero.</p>
-                <ul>
-                    <li><a href="#"> This is menu link </a></li>
-                    <li><a href="#"> This is menu link </a></li>
-                    <li class="active"><a href="#"> This is menu link </a></li>
-                    <li><a href="#"> This is menu link </a></li>
-                    <li><a href="#"> This is menu link </a></li>
-                    <li><a href="#"> This is menu link </a></li>
-                    <li class="up"><a class="close" href="#"> This is menu link </a></li>
-                    <li><a href="#"> This is menu link </a></li>
-                    <li><a href="#"> This is menu link </a></li>
-                </ul>
-
-
-                <div class="height" style="height: 500px;"></div>
-                <div id="box">
-                    This is box area
-                </div>
+               <p class="text-center">
+                   <a data-target="popup_1" href="#" class="btn btn-success btn-xs btn-click"> Click Me <span> Change It </span></a>
+               </p>
+                
             </div>
 
         </div>
@@ -45,5 +31,21 @@
             <p> This is footer for more information</p>
         </footer>
     </div>
+
+
+    <div id="popup_1" class="popup">
+        <div class="popup_main">
+            <div class="popup_head">
+                <h3> This is popup head <span class="popup-trash"> X </span> </h3>
+            </div>
+            <div class="popup_body">
+                <p> This is popup body </p>
+            </div>
+            <div class="popup_footer">
+                <p> This is popup footer</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

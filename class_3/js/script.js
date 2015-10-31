@@ -1,34 +1,36 @@
 /**
  * Created by lenovo_pc on 10/28/2015.
  */
-$(function(e){
+jQuery(function(e){
 
-    var var1 = 2555;
-    var var2 = 2554;
-    var sum = var1+var2;
+jQuery(".btn-click").click(function(event){
+    event.preventDefault();
 
-    var fName = "Rahim";
-    var lName = "Karim";
+    var main_popup  = jQuery("#popup_1");
 
-    var one = 25;
-    var two = 2;
-    var three = "20";
-    var total = one+two+three;
+    main_popup.fadeIn();
+    //main_popup.find(".popup_main").slideDown().css('top','30%');
+    main_popup.find(".popup_main").animate({
+        'top':'30%'
+    },500, function(){
 
-    console.log(total);
+    });
 
-    $(".para").css({'color':'red',border:"1px solid #ddd"});
-    //$(".para").css("border","1px solid #ddd");
-    $("ul").children().css("border","1px solid red");
+})
 
-    $(".active").next().children().css("color","green");
+    jQuery(".popup-trash").click(function(e){
+        e.preventDefault();
 
-    $(".active").prev().css("border","none");
+        var main_popup = jQuery(this).parents("#popup_1");
+        //main_popup.hide();
+        //main_popup.find(".popup_main").css('top','-100%');
+        main_popup.hide().find(".popup_main").css('top','-100%');
 
-    $('ul').find(".close").css("font-size","15px");
+    })
 
-    $("ul").children(".up").css("border","none");
-
-    $(".close").parents("ul").css("background-color","yellow");
-
+    jQuery(window).click(function(e){
+       if( e.target.className =='popup'){
+          jQuery(".popup-trash").click();
+        }
+    })
 })
