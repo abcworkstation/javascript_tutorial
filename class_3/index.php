@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script language="javascript" type="text/javascript" src="js/jquery-2.1.4.js"></script>
 
-<!--    <script src="js/class_1.js"></script>-->
-    <script src="js/class_2.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div id="coantienr" class="container">
